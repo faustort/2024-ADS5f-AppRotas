@@ -3,7 +3,7 @@ import styles from "../config/styles";
 import { Image } from "expo-image";
 
 export default function HomeScreen({ navigation }) {
-  return (
+  return ( 
     <View style={styles.container}>
       <Image
         source={require("../../assets/logo.png")}
