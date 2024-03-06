@@ -6,6 +6,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  innerContainer: {
+    paddingHorizontal: 20,
+    paddingTop: 20,
+    paddingBottom: 5,
+    flex: 1,
+  },
   h1: {
     fontSize: 24,
     fontWeight: "bold",

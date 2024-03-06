@@ -1,12 +1,12 @@
 import { ScrollView, Text, View } from "react-native";
 import styles from "../config/styles";
 
-export default function SobreScreen() {
+export default function QuemSomosScreen() {
   return (
     <View style={styles.container}>
       <ScrollView>
         <View style={styles.innerContainer}>
-          <Text style={styles.h1}>Sobre o App</Text>
+          <Text style={styles.h1}>Quem Somos</Text>
           <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nibh
             elit, sagittis in pharetra eu, congue non diam. Vivamus elementum
