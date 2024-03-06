@@ -30,32 +30,36 @@ function TabNavigator() {
         name="HomeScreen"
         component={HomeScreen}
         options={{
+          title: "Início",
           tabBarLabel: "Início",
-          tabBarIcon: "home",
-        }}
-      />
-      <Tab.Screen
-        name="QuemSomosScreen"
-        component={QuemSomosScreen}
-        options={{
-          tabBarLabel: "Quem Somos",
-          tabBarIcon: "information",
-        }}
-      />
-      <Tab.Screen
-        name="SobreScreen"
-        component={SobreScreen}
-        options={{
-          tabBarLabel: "Sobre",
-          tabBarIcon: "information-variant",
+          tabBarIcon: "home-variant-outline",
         }}
       />
       <Tab.Screen
         name="BuscaCepScreen"
         component={BuscaCepScreen}
         options={{
+          title: "Busca CEP",
           tabBarLabel: "CEP",
-          tabBarIcon: "information-variant",
+          tabBarIcon: "map-marker-multiple-outline",
+        }}
+      />
+      <Tab.Screen
+        name="QuemSomosScreen"
+        component={QuemSomosScreen}
+        options={{
+          title: "Quem Somos",
+          tabBarLabel: "Quem Somos",
+          tabBarIcon: "account-convert",
+        }}
+      />
+      <Tab.Screen
+        name="SobreScreen"
+        component={SobreScreen}
+        options={{
+          title: "Sobre",
+          tabBarLabel: "Sobre",
+          tabBarIcon: "comment-question-outline",
         }}
       />
     </Tab.Navigator>

@@ -1,5 +1,6 @@
 import { Text, TextInput, View } from "react-native";
 import { useState } from "react";
+import { TextInput as TextInputNP } from "react-native-paper";
 import styles from "../config/styles";
 
 export default function BuscaCep() {
@@ -38,34 +39,42 @@ export default function BuscaCep() {
     <View style={styles.container}>
       <Text
         style={{
-          ...styles.h1,
-          ...styles.corDestaque,
+          ...styles.h1, // unsando o spread operator
+          ...styles.corDestaque, // unsando o spread operator
         }}
       >
-        Busca CEP h1 grandão, tomate
+        Encontre o local pelo CEP
       </Text>
-      <Text style={styles.h2}>Enconte o endereço pelo CEP</Text>
-      <TextInput
-        value={cep} // valor do input
-        onChangeText={setCep} // função que atualiza o valor do input
-        maxLength={8} // tamanho máximo do input
-        inputMode="numeric" // tipo do teclado
-        placeholder="Digite o CEP" // texto de placeholder
-        style={styles.inputText} // estilo do input
+      <Text
+        style={{
+          ...styles.h2,
+          ...styles.espacamentoDelicado,
+        }}
+      >
+        Faça sua busca abaixo
+      </Text>
+      <TextInputNP
+        value={cep}
+        onChangeText={setCep}
+        maxLength={8}
+        inputMode="numeric"
+        placeholder="Digite o CEP"
         onBlur={buscaCep}
+        mode="outlined"
       />
-      <TextInput
-        style={styles.inputText}
+
+      <TextInputNP
+        style={styles.espacamentoDelicado}
         value={endereco.logradouro}
         placeholder="Rua / Logradouro"
       />
-      <TextInput
-        style={styles.inputText}
+      <TextInputNP
+        style={styles.espacamentoDelicado}
         value={endereco.localidade}
         placeholder="Cidade"
       />
-      <TextInput
-        style={styles.inputText}
+      <TextInputNP
+        style={styles.espacamentoDelicado}
         value={endereco.uf}
         placeholder="Estado"
       />

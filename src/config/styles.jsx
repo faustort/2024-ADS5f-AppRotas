@@ -26,8 +26,11 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 10,
   },
+  espacamentoDelicado: {
+    marginVertical: 5,
+  },
   corDestaque: {
-    color: "tomato",
+    color: "#42ccc8",
   },
 });
 
