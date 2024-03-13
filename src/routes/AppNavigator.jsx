@@ -4,6 +4,7 @@ import SobreScreen from "../screens/SobreScreen";
 import QuemSomosScreen from "../screens/QuemSomosScreen";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import BuscaCepScreen from "../screens/BuscaCepScreen";
+import LoginScreen from "../screens/LoginScreen";
 
 const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
@@ -11,6 +12,13 @@ const Tab = createMaterialBottomTabNavigator();
 export default function AppNavigator() {
   return (
     <Stack.Navigator>
+      <Stack.Screen
+        name="LoginScreen" // como se fosse um id da tela
+        component={LoginScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
       <Stack.Screen
         name="TabNavigator" // como se fosse um id da tela
         component={TabNavigator}

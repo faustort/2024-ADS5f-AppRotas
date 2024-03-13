@@ -13,7 +13,7 @@
     "@react-navigation/material-bottom-tabs": "^6.2.24",
     "@react-navigation/native": "^6.1.12",
     "@react-navigation/native-stack": "^6.9.20",
-    "expo": "~50.0.8",
+    "expo": "~50.0.11",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -23,7 +23,8 @@
     "react-native-screens": "~3.29.0",
     "react-native-vector-icons": "^10.0.3",
     "react-native-web": "~0.19.6",
-    "expo-image": "~1.10.6"
+    "expo-image": "~1.10.6",
+    "@react-native-async-storage/async-storage": "1.21.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
